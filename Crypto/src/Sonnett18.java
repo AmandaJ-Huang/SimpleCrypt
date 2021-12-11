@@ -28,8 +28,8 @@ public class Sonnett18 {
 
     public void encryptThenWriteToFile(String toEncrypt, String writeTo) {
         try {
-            FileWriter fileWriter = new FileWriter(writeTo);
             String encrypt = encryptFile(toEncrypt);
+            FileWriter fileWriter = new FileWriter(writeTo);
             fileWriter.write(encrypt);
             fileWriter.close();
         } catch (IOException e) {

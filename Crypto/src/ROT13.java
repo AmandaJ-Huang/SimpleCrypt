@@ -24,9 +24,9 @@ public class ROT13  {
                 crypted.append(t);
                 continue;
             }
-            if ((Character.isUpperCase(t) && t > 'M') && t < 'Z') {
+            if (Character.isUpperCase(t) && t > 'M' && t <= 'Z') {
                 t -= shift;
-            } else if ((Character.isLowerCase(t) && t > 'm') && t < 'z'){
+            } else if (Character.isLowerCase(t) && t > 'm' && t <= 'z'){
                 t -= shift;
             } else {
                 t += shift;

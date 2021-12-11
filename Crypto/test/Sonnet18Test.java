@@ -40,6 +40,7 @@ public class Sonnet18Test {
         String encryptedFile = "sonnet18enc.txt";
         String original = sonnett18.loadFile(originalFile);
 
+
         // When
         sonnett18.encryptThenWriteToFile(originalFile, encryptedFile);
         sonnett18.encryptThenWriteToFile(encryptedFile, encryptedFile);
